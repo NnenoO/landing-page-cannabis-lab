@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cannabis lab</title>
+
+    <link rel="stylesheet" href="event-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <nav>
+        <div class="container">
+            <div class="nav-con">
+                <div class="logo">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div id="menu" class="menu">
+                    <a class="btn" href="index.html">HOME</a>
+                    <a class="btn" href="product.html">PRODUCT</a>
+                    <a class="btn active" href="event.html">EVENT</a>
+                    <a class="btn" href="aboutus.html">ABOUT US</a>
+                    <a class="btn" href="contact.html">CONTACT</a>
+                </div>
+                <div id="menuMobile" class="menu-moblie">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="menu-moblie-content">
+                      <a class="btn-moblie" href="index.html">HOME</a>
+                      <a class="btn-moblie" href="product.html">PRODUCT</a>
+                      <a class="btn-moblie active" href="event.html">EVENT</a>
+                      <a class="btn-moblie" href="aboutus.html">ABOUT US</a>
+                      <a class="btn-moblie" href="contact.html">CONTACT</a>
+                    </div>
+                </div>
+                <span class="menu-mobile-icon" onclick="openNav()">&#9776; </span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="event">
+      <div class="container">
+
+        <div class="event-con">
+          <h2>EVENTS IN 2024</h2>
+          <p>รวมกิจกรรมน่าสนใจมาให้แล้ว สนใจอันไหนมุ่งไปได้เลย</p>
+        </div>
+
+        <div class="event-con-m">
+
+          <!-- เดือน 1 -->
+      
+          <div class="event-month">
+
+            <div class="head-month">
+              <h3 id="eventOpenJan">JAN</h3>
+              <p id="showEventsBtnJan" onclick="toggleEvent('eventListJan', 'showEventsBtnJan', 'hideEventsBtnJan')">+</p>
+              <p id="hideEventsBtnJan" onclick="toggleEvent('eventListJan', 'showEventsBtnJan', 'hideEventsBtnJan')" style="display:none;">-</p>
+            </div>
+
+            <div id="eventListJan" class="event-list">
+              <div>
+                <img src="img/event/event 1.jpg" alt="">
+              </div>
+              <div>
+                <p>DAY : 10-11 JAN</p>
+                <p>LOCATION : Cannabis Cafe, Ratchapakhinai Rd Si Phum Sub-district, Mueang Chiang Mai District Chiang Mai 50200 Thailand</p>
+                <p>AGE : 20+</p>
+                <p>PRICE : 999 THB</p>
+                <a href="#">ซื้อบัตร</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- เดือน 2 -->
+      
+          <div class="event-month">
+
+            <div class="head-month">
+              <h3 id="eventOpenFeb">FEB</h3>
+              <p id="showEventsBtnFeb" onclick="toggleEvent('eventListFeb', 'showEventsBtnFeb', 'hideEventsBtnFeb')">+</p>
+              <p id="hideEventsBtnFeb" onclick="toggleEvent('eventListFeb', 'showEventsBtnFeb', 'hideEventsBtnFeb')" style="display:none;">-</p>
+            </div>
+      
+            <div id="eventListFeb" class="event-list">
+              <div>
+                <img src="img/event/event 2.jpg" alt="">
+              </div>
+              <div>
+                <p>DAY : 10-11 FEB</p>
+                <p>LOCATION : Cannabis Cafe, Ratchapakhinai Rd Si Phum Sub-district, Mueang Chiang Mai District Chiang Mai 50200 Thailand</p>
+                <p>AGE : 20+</p>
+                <p>PRICE : 999 THB</p>
+                <a href="#">ซื้อบัตร</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- เดือน 3 -->
+
+          <div class="event-month">
+
+            <div class="head-month">
+              <h3 id="eventOpenMar">MAR</h3>
+              <p id="showEventsBtnMar" onclick="toggleEvent('eventListMar', 'showEventsBtnMar', 'hideEventsBtnMar')">+</p>
+              <p id="hideEventsBtnMar" onclick="toggleEvent('eventListMar', 'showEventsBtnMar', 'hideEventsBtnMar')" style="display:none;">-</p>
+            </div>
+      
+            <div id="eventListMar" class="event-list">
+              <div>
+                <img src="img/event/event 3.jpg" alt="">
+              </div>
+              <div>
+                <p>DAY : 10-11 Mar</p>
+                <p>LOCATION : Cannabis Cafe, Ratchapakhinai Rd Si Phum Sub-district, Mueang Chiang Mai District Chiang Mai 50200 Thailand</p>
+                <p>AGE : 20+</p>
+                <p>PRICE : 999 THB</p>
+                <a href="#">ซื้อบัตร</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- เดือน 4 -->
+
+          <div class="event-month">
+
+            <div class="head-month">
+              <h3 id="eventOpenApr">APR</h3>
+              <p id="showEventsBtnApr" onclick="toggleEvent('eventListApr', 'showEventsBtnApr', 'hideEventsBtnApr')">+</p>
+              <p id="hideEventsBtnApr" onclick="toggleEvent('eventListApr', 'showEventsBtnApr', 'hideEventsBtnApr')" style="display:none;">-</p>
+            </div>
+      
+            <div id="eventListApr" class="event-list">
+              <div>
+                <img src="img/event/event 4.jpg" alt="">
+              </div>
+              <div>
+                <p>DAY : 10-11 Apr</p>
+                <p>LOCATION : Cannabis Cafe, Ratchapakhinai Rd Si Phum Sub-district, Mueang Chiang Mai District Chiang Mai 50200 Thailand</p>
+                <p>AGE : 20+</p>
+                <p>PRICE : 999 THB</p>
+                <a href="#">ซื้อบัตร</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- เดือน 5 -->
+
+          <div class="event-month">
+
+            <div class="head-month">
+              <h3 id="eventOpenMay">MAY</h3>
+              <p id="showEventsBtnMay" onclick="toggleEvent('eventListMay', 'showEventsBtnMay', 'hideEventsBtnMay')">+</p>
+              <p id="hideEventsBtnMay" onclick="toggleEvent('eventListMay', 'showEventsBtnMay', 'hideEventsBtnMay')" style="display:none;">-</p>
+            </div>
+      
+            <div id="eventListMay" class="event-list">
+              <div>
+                <img src="img/event/event 5.jpg" alt="">
+              </div>
+              <div>
+                <p>DAY : 10-11 May</p>
+                <p>LOCATION : Cannabis Cafe, Ratchapakhinai Rd Si Phum Sub-district, Mueang Chiang Mai District Chiang Mai 50200 Thailand</p>
+                <p>AGE : 20+</p>
+                <p>PRICE : 999 THB</p>
+                <a href="#">ซื้อบัตร</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- เดือน 6 -->
+
+          <div class="event-month">
+
+            <div class="head-month">
+              <h3 id="eventOpenJun">JUN</h3>
+              <p id="showEventsBtnJun" onclick="toggleEvent('eventListJun', 'showEventsBtnJun', 'hideEventsBtnJun')">+</p>
+              <p id="hideEventsBtnJun" onclick="toggleEvent('eventListJun', 'showEventsBtnJun', 'hideEventsBtnJun')" style="display:none;">-</p>
+            </div>
+      
+            <div id="eventListJun" class="event-list">
+              <div>
+                <img src="img/event/event 6.jpg" alt="">
+              </div>
+              <div>
+                <p>DAY : 10-11 Jun</p>
+                <p>LOCATION : Cannabis Cafe, Ratchapakhinai Rd Si Phum Sub-district, Mueang Chiang Mai District Chiang Mai 50200 Thailand</p>
+                <p>AGE : 20+</p>
+                <p>PRICE : 999 THB</p>
+                <a href="#">ซื้อบัตร</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- เดือน 7 -->
+
+          <div class="event-month">
+
+            <div class="head-month">
+              <h3 id="eventOpenJul">JUL</h3>
+              <p id="showEventsBtnJul" onclick="toggleEvent('eventListJul', 'showEventsBtnJul', 'hideEventsBtnJul')">+</p>
+              <p id="hideEventsBtnJul" onclick="toggleEvent('eventListJul', 'showEventsBtnJul', 'hideEventsBtnJul')" style="display:none;">-</p>
+            </div>
+
+            <div id="eventListJul" class="event-list">
+              <div>
+                <img src="img/event/event 7.jpg" alt="">
+              </div>
+              <div>
+                <p>DAY : 10-11 Jul</p>
+                <p>LOCATION : Cannabis Cafe, Ratchapakhinai Rd Si Phum Sub-district, Mueang Chiang Mai District Chiang Mai 50200 Thailand</p>
+                <p>AGE : 20+</p>
+                <p>PRICE : 999 THB</p>
+                <a href="#">ซื้อบัตร</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- เดือน 8 -->
+      
+          <div class="event-month">
+
+            <div class="head-month">
+              <h3 id="eventOpenAug">AUG</h3>
+              <p id="showEventsBtnAug" onclick="toggleEvent('eventListAug', 'showEventsBtnAug', 'hideEventsBtnAug')">+</p>
+              <p id="hideEventsBtnAug" onclick="toggleEvent('eventListAug', 'showEventsBtnAug', 'hideEventsBtnAug')" style="display:none;">-</p>
+            </div>
+      
+            <div id="eventListAug" class="event-list">
+              <div>
+                <img src="img/event/event 8.jpg" alt="">
+              </div>
+              <div>
+                <p>DAY : 10-11 Aug</p>
+                <p>LOCATION : Cannabis Cafe, Ratchapakhinai Rd Si Phum Sub-district, Mueang Chiang Mai District Chiang Mai 50200 Thailand</p>
+                <p>AGE : 20+</p>
+                <p>PRICE : 999 THB</p>
+                <a href="#">ซื้อบัตร</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- เดือน 9 -->
+
+          <div class="event-month">
+
+            <div class="head-month">
+              <h3 id="eventOpenSep">SEP</h3>
+              <p id="showEventsBtnSep" onclick="toggleEvent('eventListSep', 'showEventsBtnSep', 'hideEventsBtnSep')">+</p>
+              <p id="hideEventsBtnSep" onclick="toggleEvent('eventListSep', 'showEventsBtnSep', 'hideEventsBtnSep')" style="display:none;">-</p>
+            </div>
+      
+            <div id="eventListSep" class="event-list">
+              <div>
+                <img src="img/event/event 9.jpg" alt="">
+              </div>
+              <div>
+                <p>DAY : 10-11 Sep</p>
+                <p>LOCATION : Cannabis Cafe, Ratchapakhinai Rd Si Phum Sub-district, Mueang Chiang Mai District Chiang Mai 50200 Thailand</p>
+                <p>AGE : 20+</p>
+                <p>PRICE : 999 THB</p>
+                <a href="#">ซื้อบัตร</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- เดือน 10 -->
+
+          <div class="event-month">
+
+            <div class="head-month">
+              <h3 id="eventOpenOct">OCT</h3>
+              <p id="showEventsBtnOct" onclick="toggleEvent('eventListOct', 'showEventsBtnOct', 'hideEventsBtnOct')">+</p>
+              <p id="hideEventsBtnOct" onclick="toggleEvent('eventListOct', 'showEventsBtnOct', 'hideEventsBtnOct')" style="display:none;">-</p>
+            </div>
+      
+            <div id="eventListOct" class="event-list">
+              <div>
+                <img src="img/event/event 10.jpg" alt="">
+              </div>
+              <div>
+                <p>DAY : 10-11 Oct</p>
+                <p>LOCATION : Cannabis Cafe, Ratchapakhinai Rd Si Phum Sub-district, Mueang Chiang Mai District Chiang Mai 50200 Thailand</p>
+                <p>AGE : 20+</p>
+                <p>PRICE : 999 THB</p>
+                <a href="#">ซื้อบัตร</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- เดือน 11 -->
+
+          <div class="event-month">
+
+            <div class="head-month">
+              <h3 id="eventOpenNov">NOV</h3>
+              <p id="showEventsBtnNov" onclick="toggleEvent('eventListNov', 'showEventsBtnNov', 'hideEventsBtnNov')">+</p>
+              <p id="hideEventsBtnNov" onclick="toggleEvent('eventListNov', 'showEventsBtnNov', 'hideEventsBtnNov')" style="display:none;">-</p>
+            </div>
+      
+            <div id="eventListNov" class="event-list">
+              <div>
+                <img src="img/event/event 11.jpg" alt="">
+              </div>
+              <div>
+                <p>DAY : 10-11 Nov</p>
+                <p>LOCATION : Cannabis Cafe, Ratchapakhinai Rd Si Phum Sub-district, Mueang Chiang Mai District Chiang Mai 50200 Thailand</p>
+                <p>AGE : 20+</p>
+                <p>PRICE : 999 THB</p>
+                <a href="#">ซื้อบัตร</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- เดือน 12 -->
+
+          <div class="event-month">
+
+            <div class="head-month">
+              <h3 id="eventOpenDec">DEC</h3>
+              <p id="showEventsBtnDec" onclick="toggleEvent('eventListDec', 'showEventsBtnDec', 'hideEventsBtnDec')">+</p>
+              <p id="hideEventsBtnDec" onclick="toggleEvent('eventListDec', 'showEventsBtnDec', 'hideEventsBtnDec')" style="display:none;">-</p>
+            </div>
+      
+            <div id="eventListDec" class="event-list">
+              <div>
+                <img src="img/event/event 12.jpg" alt="">
+              </div>
+              <div>
+                <p>DAY : 10-11 Dec</p>
+                <p>LOCATION : Cannabis Cafe, Ratchapakhinai Rd Si Phum Sub-district, Mueang Chiang Mai District Chiang Mai 50200 Thailand</p>
+                <p>AGE : 20+</p>
+                <p>PRICE : 999 THB</p>
+                <a href="#">ซื้อบัตร</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    
+    <footer>
+        <div class="container">
+            <div class="foot-con">
+                <div class="foot-con-logo item1">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="foot-con-menu item2">
+                    <a class="btn" href="index.html">HOME</a>
+                    <a class="btn" href="product.html">PRODUCT</a>
+                    <a class="btn active" href="event.html">EVENT</a>
+                    <a class="btn" href="aboutus.html">ABOUT US</a>
+                    <a class="btn" href="contact.html">CONTACT</a>
+                </div>
+                <div class="foot-con-contact item3">
+                    <p><i class="fa fa-facebook-square" aria-hidden="true"></i> : Facebook</p>
+                    <p><i class="fa fa-twitter" aria-hidden="true"></i> : Twitter</p>
+                    <p><i class="fa fa-phone" aria-hidden="true"></i> : +6689-XXX-1234</p>
+                    <p><i class="fa fa-telegram" aria-hidden="true"></i> : telegram</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright 2024. All right web disign.</p>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="script.js" ></script>
+    
+</body>
+</html>
